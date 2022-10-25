@@ -1,0 +1,391 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+/* general styling */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.1rem;
+  background-color: #EEEEEE;
+  overflow-x: hidden;
+}
+
+.hide-overflow {
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h2 {
+  color: #000066;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 10px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+svg {
+  max-width: 60%;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  display: block;
+  width: 100%;
+  margin-top: auto;
+  padding-bottom: 10px; 
+}
+
+.footer a {
+  color: white;
+}
+
+/* index.html */
+
+.home-container {
+  background-image: url('Assets/Droplets.svg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: contain;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.pages {
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.9);
+  width: 40%;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  padding: 10px;
+ 
+}
+
+.pages a {
+  color: black;
+}
+
+/* navigation and menu */
+
+.nav {
+  color: white;
+  background-color: #000066;
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.nav a {
+  color: white;
+}
+
+#home-link {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#home-link a {
+  text-decoration: none;
+}
+
+#menu-link {
+  cursor: pointer;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#menu-display {
+  background-color: #99CCFF;
+  display: none;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.menu-wrapper {
+  font-size: 2rem;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.menu-wrapper a {
+  color: black;
+}
+
+.menu-wrapper a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#exit {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#exit:hover {
+  text-decoration: underline;
+}
+
+/* water-origins.html, water-scarcity.html */
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information section {
+  flex: 50%;
+}
+
+.information section img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  object-fit: contain;
+}
+
+.information section p {
+  font-size: 1.2rem;
+  text-align: justify;
+  max-width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* water-in-food.html, water-in-industry.html, water-in-sanitation.html */
+
+.container1, .container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container1 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.container1 div {
+  flex: 50%;
+}
+
+.container1 div p {
+  text-align: justify;
+  max-width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container1 div img {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.container2 {
+  width: 80%;
+  align-items: stretch;
+  margin-bottom: 100px;
+}
+
+.container2 div {
+  flex: 33.33%;
+  border: 1px solid #000066;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.stat {
+  font-size: 2rem;
+}
+
+.statement {
+  font-size: 0.9rem;
+}
+
+.footnote {
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* resources.html */
+
+.resource1, .resource2 {
+  text-align: left;
+  display: block;
+  width: 60%;  
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.resource1 a, .resource2 a {
+  color: black;
+}
+
+.resource1 a:hover, .resource2 a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  body {
+    text-align: center;
+  }
+  .home-container {
+    display: block;
+  }
+  .pages {
+    width: 90%;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  #home-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #menu-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .menu-wrapper {
+    font-size: 1.5rem;
+  }
+  .information {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .information section {
+    margin-bottom: 10px;
+  }
+  .information section img {
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+  }
+  .information p {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container1, .container2 {
+    display: block;
+    width: auto;
+    margin-top: 10px;
+  }
+  .container1 {
+    height: auto;
+  }
+  .container1 div {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .container1 div p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  .container1 div img {
+    max-width: 50%;
+  }
+  .container2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  .container2 div {
+    margin-top: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+  }
+  .resource1, .resource2 {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .resource2 {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container2 {
+    width: 90%;
+  }
+  .container2 div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .container1 div img {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .menu-wrapper {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+}
